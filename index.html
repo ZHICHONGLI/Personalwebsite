@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Me Myself and I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="My own website" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.1.min.js">
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- banner -->
+    <div class="banner">
+        <!-- container -->
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">Zhichong Li</a>
+                </div>
+
+                <div class="clearfix"> </div>
+            </div>
+            <div class="top-nav">
+                <span class="menu">MENU</span>
+                <ul class="nav1">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Resume</a></li>
+                    <li><a href="typography.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#news" class="scroll">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function() {
+                        $("ul.nav1").slideToggle(300, function() {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+            </div>
+        </div>
+        <!-- //container -->
+        <div class="banner-text">
+            <!-- container -->
+            <div class="container">
+                <ul>
+                    <li>42369 Palm Ave, Fremont, CA, 94539 </li>
+                    <li><a href="mailto:leezhc@gmail.com"> E-mail : leezhc@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- //container -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- banner-bottom -->
+    <div class="banner-top-slide">
+        <div class="banner-bottom-top">
+            <h4>About</h4>
+            <p>Me</p>
+        </div>
+        <div class="banner-bottom-bottom">
+            <div class="banner-top-slide-grids">
+                <script src="js/responsiveslides.min.js"></script>
+                <script>
+                    // You can also use "$(window).load(function() {"
+                    $(function() {
+                        // Slideshow 4
+                        $("#slider3").responsiveSlides({
+                            auto: true,
+                            pager: true,
+                            nav: false,
+                            speed: 500,
+                            namespace: "callbacks",
+                            before: function() {
+                                $('.events').append("<li>before event fired.</li>");
+                            },
+                            after: function() {
+                                $('.events').append("<li>after event fired.</li>");
+                            }
+                        });
+
+                    });
+                </script>
+                <div id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider3">
+                        <li>
+                            <div class="banner-slid">
+                                <h3>Web Developer</h3>
+                                <p>Experienced web developer, skilled with HTML5, CSS3, JavaScript, AngularJS, NodeJS, ExpressJS. And have database/ MySQL project experience also. Looking for web development job right now.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner-slid">
+                                <h3>Amateur Photographer</h3>
+                                <p>Daily life photographer, iPhone shooting mostly. #VSCO, #Snapseed, #Instagram lover. Themes cover from natural, trips, gourmets to aviation and wearings.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner-bottom -->
+    <!-- welcome -->
+    <div class="welcome">
+        <!-- container -->
+        <div class="container">
+            <div class="welcome-info">
+                <h3>Hello there!</h3>
+                <h5>Welcome to my personal site</h5>
+                <h4>This site will show you my profiles and few previously acadmic projects and some personal works of interests. Hope you will enjoy your time here.</h4>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //welcome -->
+    <div class="copyrights">
+        </a>
+    </div>
+    <!-- banner-bottom -->
+    <div class="banner-bottom">
+        <!-- container -->
+        <div class="container">
+            <div class="banner-bottom-info">
+                <h3>What does this website perfore</h3>
+                <p>My simple profiles are listed on resume page. And some of my projects are listed on projects page, includes latest and previously ones. As photo shooting is my interest, my posts on Ins. are on gallery page. </p>
+            </div>
+            <div class="banner-bottom-grids">
+                <div class="col-md-6 banner-bottom-grid">
+                    <div class="col-md-5 banner-bottom-left">
+                        <a href="typography.html">
+                            <img src="images/u1.jpg" width="180px" height="180px" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7 banner-bottom-right">
+                        <a href="typography.html">
+                            <h4>Go to my projects</h4>
+                        </a>
+                        <p>Projects on web programming and EE related projects completed in graduate school.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 banner-bottom-grid">
+                    <div class="col-md-5 banner-bottom-left">
+                        <a href="gallery.html">
+                            <img src="images/body.jpg" width="180px" height="180px" alt=""></a>
+                    </div>
+                    <div class="col-md-7 banner-bottom-right">
+                        <a href="gallery.html">
+                            <h4>Go to my gallery</h4>
+                        </a>
+                        <p>Snap shoots of daily life. All photos taken by cell phone.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+    <!-- //banner-bottom -->
+    <!-- news -->
+    <div id="news" class="news">
+        <div class="container">
+            <div class="news-text">
+                <h3>News</h3>
+                <p>Latest works on project or photo.</p>
+            </div>
+            <div class="news-grids">
+                <div class="col-md-3 news-grid">
+                    <h4>User management system</h4>
+                    <span>Sep 15,2016</span>
+                    <a href="typography.html">
+                        <img width="255px" height="170px" src="images/u1.jpg" alt="">
+                    </a>
+                    <div class="news-info">
+                        <p>Latest update: <br> add database(mongoDB) service into this application.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>New post on Ins.</h4>
+                    <span>Sep 12,2016</span>
+                    <a href="gallery.html">
+                        <img width="255px" height="170px" src="images/18.jpg" alt="">
+                    </a>
+                    <div class="news-info">
+                        <p>#Dailyroutine edit by VSCO</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>Previous Project</h4>
+                    <span>May 15,2015</span>
+                    <a href="typography.html">
+                        <img src="images/u2.jpg" width="255px" height="170px" alt=""></a>
+                    <div class="news-info">
+                        <p>Aviation network of Dynamic networks</p>
+                    </div>
+                </div>
+                <div class="col-md-3 news-grid">
+                    <h4>Previous Post</h4>
+                    <span>Jun 30,2015</span>
+                    <a href="gallery.html">
+                        <img src="images/15.png" width="255px" height="170px" alt=""></a>
+                    <div class="news-info">
+                        <p>#Desert #DB #ins</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //news -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-6 footer-left">
+                <h3>Get in touch</h3>
+                <form>
+                    <input type="text" placeholder="Email" required="">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-md-3 footer-middle">
+                <h3>Address</h3>
+                <div class="address">
+                    <p>42369 Palm Ave,
+                        <span>Fremont, CA, 94539.</span>
+                    </p>
+                </div>
+                <div class="phone">
+                    <p>+1(972)876-6784</p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-right">
+                <div class="f-logo">
+                    <a href="index.html">Home Page</a>
+                </div>
+                <p></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copyright">
+        <!-- container -->
+        <div class="container">
+            <div class="copyright-left">
+                <p>Thank You For Your Visiting</p>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- copyright -->
+</body>
+
+</html>

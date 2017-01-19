@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="js/jquery-1.11.1.min.js">
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner a-banner">
+        <!-- container -->
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">Zhichong Li</a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="top-nav">
+                <span class="menu">MENU</span>
+                <ul class="nav1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Resume</a></li>
+                    <li><a href="typography.html" class="active">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function() {
+                        $("ul.nav1").slideToggle(300, function() {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //banner -->
+    <!-- typography -->
+    <div class="typography">
+        <div class="container">
+            <div class="typography-info">
+                <h3 class="type">Projects</h3>
+                <p>The projects listed below are completed during graduate school study. The themes cover from web design, database design to signal processing and dynamic networks.</p>
+            </div>
+            <div class="project-list">
+                <div class="grid_5">
+                    <div class="container">
+                        <div class="col-md-8 project-section">
+                            <h2>Web Programming: </h2> <br>
+                            <a data-lightbox="example-set" href="images/u1.jpg">
+                                <h2>User Manamement System</h2><br>
+                            </a>
+                            <p>This web application comes with user side and backend side. Users can add edit and delete users information in page, the users' information are stored in database system online. The front side of this project used AngularJs,
+                                back side used ExpressJS and mongoDB. </p> <br>
+                            <h2> Shopping Website System </h2><br>
+                            <p>Complete the whole system of a shopping website from front side to back side. With features of shopping includes add to cart and check out, items and members management etc. HTML, CSS, JavaScript, Database, Tomcat and other
+                                web server skills were used in this project. </p>
+
+                        </div>
+                    </div>
+                    <script src="js/lightbox-plus-jquery.min.js"></script>
+                </div>
+
+                <div class="grid_5">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-4 project-section">
+                            <h2>Library Management System by SQL</h2><br>
+                            <p>This project involves the creation of a Java program capable of acting a database that can locate records based upon indexes. The program should store, read, write “.db” file and be able to manage library system as insert,
+                                delete, modify user or book information. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_5">
+                    <div class="container">
+                        <div class="col-md-8 project-section">
+                            <h2>Real-Time Implementation of User-Specific Noise Suppression</h2><br>
+                            <p>Achieve a real-time implementation, optimization and evaluation of a noise suppression or speech enhancement signal processing pipeline on smartphones for three challenging noises environments. Implemented using C programming
+                                and ADK on eclipse. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_5">
+                    <div class="container">
+                        <div class="col-md-8 col-md-offset-4 project-section">
+                            <a data-lightbox="example-set" href="images/u2.jpg">
+                                <h2>Complex Networks and Its Applications in Aviation Area</h2><br>
+                            </a>
+                            <p>Enhance acknowledges of complex networks theories. Then apply these theories and methods on aviation area, analysis features of aviation networks like stability of airlines networks and airports hubs average path length and
+                                clustering coefficient etc. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //typography -->
+    <!-- footer -->
+    <div class="footer">
+        <!-- container -->
+        <div class="container">
+            <div class="col-md-6 footer-left">
+                <h3>Get in touch</h3>
+                <form>
+                    <input type="text" placeholder="Email" required="">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-md-3 footer-middle">
+                <h3>Address</h3>
+                <div class="address">
+                    <p>42369 Palm Ave,
+                        <span>Fremont, CA, 94539.</span>
+                    </p>
+                </div>
+                <div class="phone">
+                    <p>+1(972)876-6784</p>
+                </div>
+            </div>
+            <div class="col-md-3 footer-right">
+                <div class="f-logo">
+                    <a href="index.html">Home Page</a>
+                </div>
+                <p></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copyright">
+        <!-- container -->
+        <div class="container">
+            <div class="copyright-left">
+                <p>Thank You For Your Visiting</p>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- copyright -->
+</body>
+
+</html>
